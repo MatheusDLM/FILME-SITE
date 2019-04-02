@@ -1,0 +1,10 @@
+<app-layout>
+
+    <div class="lista" *ngIf="filmes.length > 0">
+
+        <app-card *ngFor="let filme of filmes" 
+            [nome]="filme.nome" [setor]="filme.setor" [imagem]="filme.imagem"></app-card>
+
+    </div>
+
+</app-layout>
